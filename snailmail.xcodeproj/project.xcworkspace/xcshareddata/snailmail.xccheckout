@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6132CE00-98F4-47CC-BEEB-F25A82AEE3F8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>snailmail</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FF348695-D07B-49A5-B743-4759AB65EF48</key>
+		<string>https://github.com/ahisbrook/snailmail_ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>snailmail.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FF348695-D07B-49A5-B743-4759AB65EF48</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ahisbrook/snailmail_ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FF348695-D07B-49A5-B743-4759AB65EF48</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FF348695-D07B-49A5-B743-4759AB65EF48</string>
+			<key>IDESourceControlWCCName</key>
+			<string>snailmail_ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>

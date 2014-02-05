@@ -1,0 +1,6 @@
+.DS_Store
+*~.nib
+DerivedData/
+**/build/
+**/.DS_Store
+**/xcuserdata
