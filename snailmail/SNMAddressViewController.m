@@ -29,6 +29,9 @@
 	// Do any additional setup after loading the view.
 }
 
+- (void)updateMessage {
+    self.message.targetAddress = self.targetAddressView.text;
+}
 
 
 - (void)didReceiveMemoryWarning

@@ -23,6 +23,7 @@
 		CCE9C0FE18A1E4C200357F56 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCE9C0FC18A1E4C200357F56 /* InfoPlist.strings */; };
 		CCE9C10018A1E4C200357F56 /* snailmailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE9C0FF18A1E4C200357F56 /* snailmailTests.m */; };
 		CCE9C10B18A1E94B00357F56 /* SNMAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE9C10A18A1E94B00357F56 /* SNMAddressViewController.m */; };
+		CCE9C10E18A4511C00357F56 /* SNMMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE9C10D18A4511C00357F56 /* SNMMessage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		CCE9C0FF18A1E4C200357F56 /* snailmailTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = snailmailTests.m; sourceTree = "<group>"; };
 		CCE9C10918A1E94B00357F56 /* SNMAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNMAddressViewController.h; sourceTree = "<group>"; };
 		CCE9C10A18A1E94B00357F56 /* SNMAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNMAddressViewController.m; sourceTree = "<group>"; };
+		CCE9C10C18A4511C00357F56 /* SNMMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNMMessage.h; sourceTree = "<group>"; };
+		CCE9C10D18A4511C00357F56 /* SNMMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNMMessage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,10 +126,12 @@
 				CCE9C0E618A1E4C200357F56 /* Main_iPad.storyboard */,
 				CCE9C0E918A1E4C200357F56 /* SNMViewController.h */,
 				CCE9C0EA18A1E4C200357F56 /* SNMViewController.m */,
-				CCE9C0EC18A1E4C200357F56 /* Images.xcassets */,
-				CCE9C0D818A1E4C200357F56 /* Supporting Files */,
 				CCE9C10918A1E94B00357F56 /* SNMAddressViewController.h */,
 				CCE9C10A18A1E94B00357F56 /* SNMAddressViewController.m */,
+				CCE9C10C18A4511C00357F56 /* SNMMessage.h */,
+				CCE9C10D18A4511C00357F56 /* SNMMessage.m */,
+				CCE9C0EC18A1E4C200357F56 /* Images.xcassets */,
+				CCE9C0D818A1E4C200357F56 /* Supporting Files */,
 			);
 			path = snailmail;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 				CCE9C10B18A1E94B00357F56 /* SNMAddressViewController.m in Sources */,
 				CCE9C0EB18A1E4C200357F56 /* SNMViewController.m in Sources */,
 				CCE9C0DE18A1E4C200357F56 /* main.m in Sources */,
+				CCE9C10E18A4511C00357F56 /* SNMMessage.m in Sources */,
 				CCE9C0E218A1E4C200357F56 /* SNMAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,6 +487,7 @@
 				CCE9C10518A1E4C200357F56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCE9C10618A1E4C200357F56 /* Build configuration list for PBXNativeTarget "snailmailTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +496,7 @@
 				CCE9C10818A1E4C200357F56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

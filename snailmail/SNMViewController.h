@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SNMMessage.h"
 
 @interface SNMViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextView *messageTextView;
+@property (strong, nonatomic) SNMMessage *message;
 
 @end

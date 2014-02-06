@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SNMMessage.h"
 
 @interface SNMAddressViewController : UIViewController
+
+@property (strong, nonatomic) SNMMessage *message;
+@property (weak, nonatomic) IBOutlet UITextView *targetAddressView;
 
 @end

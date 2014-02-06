@@ -7,6 +7,7 @@
 //
 
 #import "SNMViewController.h"
+#import "SNMAddressViewController.h"
 
 @interface SNMViewController ()
 
@@ -21,8 +22,16 @@
     
 }
 
-- (void)performSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
-    
+- (void)updateMessage {
+    self.message.messageText = self.messageTextView.text;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"segue1"]) {
+        [self updateMessage];
+        SNMAddressViewController *addressView = (SNMAddressViewController*)[segue destinationViewController];
+        addressView.message = self.message;
+    }
 }
 
 - (void)didReceiveMemoryWarning

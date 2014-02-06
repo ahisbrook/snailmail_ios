@@ -72,6 +72,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="vMk-16-shz"/>
+                    <connections>
+                        <outlet property="targetAddressView" destination="WzJ-WY-Rek" id="LZT-hw-zkr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z12-kN-Q6T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
