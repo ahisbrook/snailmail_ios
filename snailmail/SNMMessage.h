@@ -10,7 +10,7 @@
 
 @interface SNMMessage : NSObject
 
-@property (nonatomic,retain) NSString *messageText;
-@property (nonatomic,retain) NSString *targetAddress;
+@property (strong, nonatomic) NSString *messageText;
+@property (strong, nonatomic) NSString *targetAddress;
 
 @end

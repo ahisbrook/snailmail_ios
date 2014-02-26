@@ -12,6 +12,6 @@
 @interface SNMAddressViewController : UIViewController
 
 @property (strong, nonatomic) SNMMessage *message;
-@property (weak, nonatomic) IBOutlet UITextView *targetAddressView;
+@property (weak, nonatomic) IBOutlet UITextView *targetAddress;
 
 @end

@@ -7,30 +7,24 @@
 //
 
 #import "SNMAddressViewController.h"
+#import "ADROVMapper.h"
 
 @interface SNMAddressViewController ()
-
+@property ADROVMapper *mapper;
 @end
 
 @implementation SNMAddressViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    self.mapper = [ADROVMapper mapperWithView:self object:self.message];
+    [self.mapper updateView];
 }
 
 - (void)updateMessage {
-    self.message.targetAddress = self.targetAddressView.text;
+    [self.mapper updateObject];
+    //self.message.targetAddress = self.targetAddress.text;
 }
 
 

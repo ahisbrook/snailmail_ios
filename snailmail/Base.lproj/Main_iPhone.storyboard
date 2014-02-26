@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Message-->
+        <!--Message View Controller - Message-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="SNMViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="SNMMessageViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5Oq-nd-jwA"/>
                         <viewControllerLayoutGuide type="bottom" id="RFU-TW-i4z"/>
@@ -17,14 +17,20 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="some text" translatesAutoresizingMaskIntoConstraints="NO" id="FeZ-Md-VD5">
-                                <rect key="frame" x="0.0" y="116" width="320" height="336"/>
+                                <rect key="frame" x="20" y="134" width="280" height="300"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Recipient" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oEH-bd-fE8">
+                                <rect key="frame" x="20" y="82" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Message" id="RyG-P5-VOI">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="JLh-7t-BIR">
@@ -36,49 +42,19 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="rQs-28-tqi" kind="push" identifier="segue1" id="ugY-jB-1IZ"/>
+                                    <segue destination="STB-dj-LOc" kind="push" identifier="segue1" id="1Vd-tS-d99"/>
                                 </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="messageTextView" destination="FeZ-Md-VD5" id="2aF-bx-fs4"/>
+                        <outlet property="messageText" destination="FeZ-Md-VD5" id="IEj-Ws-XeY"/>
+                        <outlet property="targetAddress" destination="oEH-bd-fE8" id="Ak8-p7-ZfQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="115" y="-17"/>
-        </scene>
-        <!--Address View Controller-->
-        <scene sceneID="Qr9-3x-hhK">
-            <objects>
-                <viewController id="rQs-28-tqi" customClass="SNMAddressViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="io3-Pc-gpD"/>
-                        <viewControllerLayoutGuide type="bottom" id="miQ-C6-Kae"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="qeO-gj-sCJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="some text" translatesAutoresizingMaskIntoConstraints="NO" id="WzJ-WY-Rek">
-                                <rect key="frame" x="0.0" y="116" width="320" height="336"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="vMk-16-shz"/>
-                    <connections>
-                        <outlet property="targetAddressView" destination="WzJ-WY-Rek" id="LZT-hw-zkr"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="z12-kN-Q6T" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="506" y="-11"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yIA-wf-Q1J">
@@ -94,6 +70,55 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CeU-kW-uMP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-313" y="-17"/>
+        </scene>
+        <!--Message View Controller - Review-->
+        <scene sceneID="vLk-KR-sqm">
+            <objects>
+                <viewController id="STB-dj-LOc" customClass="SNMMessageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e7b-Qh-S7X"/>
+                        <viewControllerLayoutGuide type="bottom" id="6n2-WM-rKc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7qP-h6-QdB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="some text" translatesAutoresizingMaskIntoConstraints="NO" id="hUR-TR-Q8g">
+                                <rect key="frame" x="20" y="134" width="280" height="300"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Recipient" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pil-bb-MI6">
+                                <rect key="frame" x="20" y="82" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Review" id="9wb-NC-y55">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="LwS-2z-r67">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nOQ-Gh-J0y">
+                                <rect key="frame" x="233" y="5" width="71" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="messageText" destination="hUR-TR-Q8g" id="MlH-9c-zNM"/>
+                        <outlet property="targetAddress" destination="Pil-bb-MI6" id="znv-th-ug1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oXJ-9V-H4O" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="524" y="-17"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "SNMMessage.h"
 
-@interface SNMViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextView *messageTextView;
+@interface SNMMessageViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextView *messageText;
+@property (weak, nonatomic) IBOutlet UITextField *targetAddress;
 @property (strong, nonatomic) SNMMessage *message;
 
 @end

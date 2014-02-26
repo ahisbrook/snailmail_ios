@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CCD1D08718BD71FD00CCDC90 /* ADROVMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD1D08618BD71FD00CCDC90 /* ADROVMapper.m */; };
 		CCE9C0D218A1E4C200357F56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE9C0D118A1E4C200357F56 /* Foundation.framework */; };
 		CCE9C0D418A1E4C200357F56 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE9C0D318A1E4C200357F56 /* CoreGraphics.framework */; };
 		CCE9C0D618A1E4C200357F56 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE9C0D518A1E4C200357F56 /* UIKit.framework */; };
@@ -15,7 +16,7 @@
 		CCE9C0E218A1E4C200357F56 /* SNMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE9C0E118A1E4C200357F56 /* SNMAppDelegate.m */; };
 		CCE9C0E518A1E4C200357F56 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE9C0E318A1E4C200357F56 /* Main_iPhone.storyboard */; };
 		CCE9C0E818A1E4C200357F56 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE9C0E618A1E4C200357F56 /* Main_iPad.storyboard */; };
-		CCE9C0EB18A1E4C200357F56 /* SNMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE9C0EA18A1E4C200357F56 /* SNMViewController.m */; };
+		CCE9C0EB18A1E4C200357F56 /* SNMMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE9C0EA18A1E4C200357F56 /* SNMMessageViewController.m */; };
 		CCE9C0ED18A1E4C200357F56 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCE9C0EC18A1E4C200357F56 /* Images.xcassets */; };
 		CCE9C0F418A1E4C200357F56 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE9C0F318A1E4C200357F56 /* XCTest.framework */; };
 		CCE9C0F518A1E4C200357F56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE9C0D118A1E4C200357F56 /* Foundation.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CCD1D08518BD71FD00CCDC90 /* ADROVMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADROVMapper.h; sourceTree = "<group>"; };
+		CCD1D08618BD71FD00CCDC90 /* ADROVMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADROVMapper.m; sourceTree = "<group>"; };
 		CCE9C0CE18A1E4C200357F56 /* snailmail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snailmail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE9C0D118A1E4C200357F56 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CCE9C0D318A1E4C200357F56 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -49,8 +52,8 @@
 		CCE9C0E118A1E4C200357F56 /* SNMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNMAppDelegate.m; sourceTree = "<group>"; };
 		CCE9C0E418A1E4C200357F56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		CCE9C0E718A1E4C200357F56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		CCE9C0E918A1E4C200357F56 /* SNMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNMViewController.h; sourceTree = "<group>"; };
-		CCE9C0EA18A1E4C200357F56 /* SNMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNMViewController.m; sourceTree = "<group>"; };
+		CCE9C0E918A1E4C200357F56 /* SNMMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNMMessageViewController.h; sourceTree = "<group>"; };
+		CCE9C0EA18A1E4C200357F56 /* SNMMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNMMessageViewController.m; sourceTree = "<group>"; };
 		CCE9C0EC18A1E4C200357F56 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CCE9C0F218A1E4C200357F56 /* snailmailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = snailmailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE9C0F318A1E4C200357F56 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -87,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CCD1D08418BD717B00CCDC90 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CCD1D08518BD71FD00CCDC90 /* ADROVMapper.h */,
+				CCD1D08618BD71FD00CCDC90 /* ADROVMapper.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		CCE9C0C518A1E4C200357F56 = {
 			isa = PBXGroup;
 			children = (
@@ -120,12 +132,13 @@
 		CCE9C0D718A1E4C200357F56 /* snailmail */ = {
 			isa = PBXGroup;
 			children = (
+				CCD1D08418BD717B00CCDC90 /* Utilities */,
 				CCE9C0E018A1E4C200357F56 /* SNMAppDelegate.h */,
 				CCE9C0E118A1E4C200357F56 /* SNMAppDelegate.m */,
 				CCE9C0E318A1E4C200357F56 /* Main_iPhone.storyboard */,
 				CCE9C0E618A1E4C200357F56 /* Main_iPad.storyboard */,
-				CCE9C0E918A1E4C200357F56 /* SNMViewController.h */,
-				CCE9C0EA18A1E4C200357F56 /* SNMViewController.m */,
+				CCE9C0E918A1E4C200357F56 /* SNMMessageViewController.h */,
+				CCE9C0EA18A1E4C200357F56 /* SNMMessageViewController.m */,
 				CCE9C10918A1E94B00357F56 /* SNMAddressViewController.h */,
 				CCE9C10A18A1E94B00357F56 /* SNMAddressViewController.m */,
 				CCE9C10C18A4511C00357F56 /* SNMMessage.h */,
@@ -265,8 +278,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCE9C10B18A1E94B00357F56 /* SNMAddressViewController.m in Sources */,
-				CCE9C0EB18A1E4C200357F56 /* SNMViewController.m in Sources */,
+				CCE9C0EB18A1E4C200357F56 /* SNMMessageViewController.m in Sources */,
 				CCE9C0DE18A1E4C200357F56 /* main.m in Sources */,
+				CCD1D08718BD71FD00CCDC90 /* ADROVMapper.m in Sources */,
 				CCE9C10E18A4511C00357F56 /* SNMMessage.m in Sources */,
 				CCE9C0E218A1E4C200357F56 /* SNMAppDelegate.m in Sources */,
 			);
